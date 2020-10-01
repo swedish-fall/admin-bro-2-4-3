@@ -41,7 +41,7 @@ const ListAction: Action<ListActionResponse> = {
     if (perPage) {
       perPage = +perPage > PER_PAGE_LIMIT ? PER_PAGE_LIMIT : +perPage
     } else {
-      perPage = 10 // default
+      perPage = 100 // default
     }
     page = Number(page) || 1
     const sort = sortSetter(
